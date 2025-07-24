@@ -1,13 +1,13 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f5f7fa;
@@ -57,19 +57,23 @@ a {
 .nav-link {
   color: #ccc;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   position: relative;
+  padding: 6px 10px;
+  border-radius: 6px;
 }
 
 .nav-link:hover {
   color: #fff;
+  background-color: #1d3557;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .nav-link::after {
   content: '';
   display: block;
   height: 2px;
-  background: #fff;
+  background: #a8dadc;
   transition: width 0.3s ease;
   width: 0;
   margin-top: 3px;
@@ -124,11 +128,19 @@ a {
 }
 
 .badge {
-  background-color: #e0e0e0;
+  background: linear-gradient(135deg, #7b2cbf, #5a189a);
+  color: #fff;
   padding: 10px 16px;
   border-radius: 20px;
   font-weight: 500;
   font-size: 0.95rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
 .projects-grid {
@@ -139,29 +151,37 @@ a {
 }
 
 .project-card {
-  background-color: #fff;
+  background: linear-gradient(135deg, #edf2fb, #dbe4ff);
   padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .project-card h5 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #1d3557;
 }
 
 .project-card a {
   display: inline-block;
   margin-top: 10px;
-  color: #005c97;
-  font-weight: 500;
+  color: #4361ee;
+  font-weight: 600;
   border-bottom: 1px solid transparent;
   transition: all 0.3s;
 }
 
 .project-card a:hover {
-  border-bottom: 1px solid #005c97;
+  color: #3a0ca3;
+  border-bottom: 1px solid #3a0ca3;
 }
 
 .footer {
